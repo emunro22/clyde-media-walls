@@ -42,14 +42,14 @@ export default function Navbar() {
       <nav style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
         transition: 'all 0.4s ease',
-        background: scrolled ? 'rgba(15,26,46,0.96)' : 'transparent',
-        borderBottom: scrolled ? '1px solid rgba(201,168,76,0.2)' : 'none',
-        backdropFilter: scrolled ? 'blur(16px)' : 'none',
+        background: (scrolled || isMobile) ? 'rgba(15,26,46,0.97)' : 'transparent',
+        borderBottom: (scrolled || isMobile) ? '1px solid rgba(201,168,76,0.2)' : 'none',
+        backdropFilter: (scrolled || isMobile) ? 'blur(16px)' : 'none',
       }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px' }}>
           <div style={{
             display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            height: scrolled ? '68px' : '88px', transition: 'height 0.4s ease'
+            height: isMobile ? '64px' : scrolled ? '68px' : '88px', transition: 'height 0.4s ease'
           }}>
 
             {/* Logo */}
