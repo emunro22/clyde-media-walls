@@ -25,7 +25,7 @@ export async function POST(req) {
     // ── 1. Notification email to the business ──────────────────────────────
     await resend.emails.send({
       from: 'Clyde Media Walls <enquiries@clydemediawalls.co.uk>',
-      to: 'christopherpreavage25@gmail.com',
+      to: 'christopherpresavage25@gmail.com',
       replyTo: email,
       subject: `New Enquiry from ${name} — ${serviceLabel}`,
       html: ownerEmailHtml({ name, email, phone, location, message, service: serviceLabel }),
