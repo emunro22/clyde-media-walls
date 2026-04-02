@@ -1,7 +1,5 @@
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 const serviceLabels = {
   fireplace: 'Fireplace Media Wall',
   tv: 'TV & AV Integration',
@@ -13,6 +11,7 @@ const serviceLabels = {
 }
 
 export async function POST(req) {
+  const resend = new Resend(process.env.RESEND_API_KEY)
   try {
     const body = await req.json()
     const { name, email, phone, location, message, service } = body
