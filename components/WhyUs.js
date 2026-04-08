@@ -1,6 +1,9 @@
 'use client'
 import { useEffect, useState } from 'react'
 
+const CYAN  = '#00c8f0'
+const CYAN2 = '#5de0f5'
+
 export default function WhyUs() {
   const [isMobile, setIsMobile] = useState(false)
 
@@ -45,24 +48,24 @@ export default function WhyUs() {
   ]
 
   const stats = [
-    { num: '100+', label: 'Projects Completed' },
-    { num: '5.0', label: 'Average Star Rating' },
+    { num: '100+',   label: 'Projects Completed' },
+    { num: '5.0',    label: 'Average Star Rating' },
     { num: '3 days', label: 'Avg Install Time' },
-    { num: '10yr', label: 'Structural Guarantee' },
+    { num: '100%',   label: 'Reliable' },
   ]
 
   return (
     <section id="why-us" style={{
-      background: 'linear-gradient(135deg, #1a2744 0%, #0f1a2e 50%, #1a2744 100%)',
+      background: 'linear-gradient(135deg, #112240 0%, #0d1b2e 50%, #112240 100%)',
       padding: isMobile ? '70px 20px' : '100px 24px',
-      position: 'relative',
-      overflow: 'hidden',
+      position: 'relative', overflow: 'hidden',
     }}>
-      <div style={{ position: 'absolute', inset: 0, opacity: 0.03, backgroundImage: 'repeating-linear-gradient(45deg, #c9a84c 0, #c9a84c 1px, transparent 0, transparent 60px), repeating-linear-gradient(-45deg, #c9a84c 0, #c9a84c 1px, transparent 0, transparent 60px)' }} />
+      {/* Subtle diagonal grid */}
+      <div style={{ position: 'absolute', inset: 0, opacity: 0.025, backgroundImage: 'repeating-linear-gradient(45deg, #00c8f0 0, #00c8f0 1px, transparent 0, transparent 60px), repeating-linear-gradient(-45deg, #00c8f0 0, #00c8f0 1px, transparent 0, transparent 60px)' }} />
 
       <div style={{ maxWidth: '1280px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
 
-        {/* Top section — stacks on mobile */}
+        {/* Top section */}
         <div style={{
           display: 'grid',
           gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr',
@@ -73,60 +76,50 @@ export default function WhyUs() {
           {/* Left — heading + copy */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '16px' }}>
-              <div style={{ width: '40px', height: '1px', background: '#c9a84c' }} />
-              <span style={{ fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 600, fontSize: '0.78rem', letterSpacing: '0.28em', textTransform: 'uppercase', color: '#c9a84c' }}>Why Choose Us</span>
+              <div style={{ width: '40px', height: '1px', background: CYAN }} />
+              <span style={{ fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 600, fontSize: '0.78rem', letterSpacing: '0.28em', textTransform: 'uppercase', color: CYAN }}>Why Choose Us</span>
             </div>
-            <h2 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(2.8rem, 5vw, 4.5rem)', letterSpacing: '0.04em', color: '#f8f5ef', lineHeight: 0.95, marginBottom: '24px' }}>
+            <h2 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: 'clamp(2.8rem, 5vw, 4.5rem)', letterSpacing: '0.04em', color: '#e8f4fa', lineHeight: 0.95, marginBottom: '24px' }}>
               Glasgow's Most<br />
-              <span style={{ background: 'linear-gradient(135deg, #e2c47a, #c9a84c)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Trusted</span><br />
+              <span style={{ background: `linear-gradient(135deg, ${CYAN2}, ${CYAN})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Trusted</span><br />
               Media Wall Fitters
             </h2>
-            <p style={{ fontFamily: 'Barlow, sans-serif', fontSize: '1rem', color: 'rgba(248,245,239,0.6)', lineHeight: 1.8, fontWeight: 300 }}>
+            <p style={{ fontFamily: 'Barlow, sans-serif', fontSize: '1rem', color: 'rgba(232,244,250,0.6)', lineHeight: 1.8, fontWeight: 300 }}>
               We've transformed hundreds of living spaces across Greater Glasgow and beyond. Every project gets the same obsessive attention to detail — whether it's a modest alcove unit or a full-room showstopper.
             </p>
-            <div style={{ marginTop: '28px', padding: '20px 24px', background: 'rgba(201,168,76,0.08)', borderLeft: '3px solid #c9a84c' }}>
-              <p style={{ fontFamily: 'Barlow, sans-serif', fontSize: '0.97rem', color: 'rgba(248,245,239,0.85)', lineHeight: 1.7, fontStyle: 'italic' }}>
+            <div style={{ marginTop: '28px', padding: '20px 24px', background: 'rgba(0,200,240,0.06)', borderLeft: `3px solid ${CYAN}` }}>
+              <p style={{ fontFamily: 'Barlow, sans-serif', fontSize: '0.97rem', color: 'rgba(232,244,250,0.85)', lineHeight: 1.7, fontStyle: 'italic' }}>
                 "We don't just install media walls — we craft focal points that become the centrepiece of your home."
               </p>
-              <div style={{ marginTop: '10px', fontFamily: 'Barlow Condensed, sans-serif', fontSize: '0.72rem', letterSpacing: '0.18em', color: '#c9a84c', textTransform: 'uppercase' }}>— Clyde Media Walls</div>
+              <div style={{ marginTop: '10px', fontFamily: 'Barlow Condensed, sans-serif', fontSize: '0.72rem', letterSpacing: '0.18em', color: CYAN, textTransform: 'uppercase' }}>— Clyde Media Walls</div>
             </div>
           </div>
 
-          {/* Right — stats grid, fully contained */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '2px',
-            background: 'rgba(201,168,76,0.15)',
-            width: '100%',
-          }}>
+          {/* Right — stats grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2px', background: 'rgba(0,200,240,0.15)', width: '100%' }}>
             {stats.map(s => (
-              <div key={s.label} style={{ background: '#0f1a2e', padding: isMobile ? '28px 16px' : '36px 28px', textAlign: 'center' }}>
-                <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: isMobile ? '2.2rem' : '3rem', letterSpacing: '0.03em', background: 'linear-gradient(135deg, #e2c47a, #c9a84c)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', lineHeight: 1 }}>{s.num}</div>
-                <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '0.68rem', letterSpacing: '0.16em', color: 'rgba(248,245,239,0.5)', textTransform: 'uppercase', marginTop: '8px', lineHeight: 1.4 }}>{s.label}</div>
+              <div key={s.label} style={{ background: '#0d1b2e', padding: isMobile ? '28px 16px' : '36px 28px', textAlign: 'center' }}>
+                <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: isMobile ? '2.2rem' : '3rem', letterSpacing: '0.03em', background: `linear-gradient(135deg, ${CYAN2}, ${CYAN})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', lineHeight: 1 }}>{s.num}</div>
+                <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '0.68rem', letterSpacing: '0.16em', color: 'rgba(232,244,250,0.5)', textTransform: 'uppercase', marginTop: '8px', lineHeight: 1.4 }}>{s.label}</div>
               </div>
             ))}
           </div>
         </div>
 
         {/* Reasons grid */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(290px, 1fr))',
-          gap: '16px',
-        }}>
+        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(290px, 1fr))', gap: '16px' }}>
           {reasons.map((r, i) => (
             <div key={i} style={{
               padding: '28px',
-              background: 'rgba(248,245,239,0.03)',
-              border: '1px solid rgba(201,168,76,0.12)',
+              background: 'rgba(232,244,250,0.03)',
+              border: '1px solid rgba(0,200,240,0.12)',
               transition: 'all 0.3s',
             }}
-              onMouseEnter={e => { e.currentTarget.style.background = 'rgba(201,168,76,0.06)'; e.currentTarget.style.borderColor = 'rgba(201,168,76,0.3)'; e.currentTarget.style.transform = 'translateY(-4px)' }}
-              onMouseLeave={e => { e.currentTarget.style.background = 'rgba(248,245,239,0.03)'; e.currentTarget.style.borderColor = 'rgba(201,168,76,0.12)'; e.currentTarget.style.transform = 'translateY(0)' }}>
-              <div style={{ color: '#c9a84c', marginBottom: '14px' }}>{r.icon}</div>
-              <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '1.4rem', letterSpacing: '0.06em', color: '#f8f5ef', marginBottom: '8px' }}>{r.title}</h3>
-              <p style={{ fontFamily: 'Barlow, sans-serif', fontSize: '0.9rem', color: 'rgba(248,245,239,0.6)', lineHeight: 1.7, fontWeight: 300 }}>{r.desc}</p>
+              onMouseEnter={e => { e.currentTarget.style.background = 'rgba(0,200,240,0.05)'; e.currentTarget.style.borderColor = 'rgba(0,200,240,0.3)'; e.currentTarget.style.transform = 'translateY(-4px)' }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'rgba(232,244,250,0.03)'; e.currentTarget.style.borderColor = 'rgba(0,200,240,0.12)'; e.currentTarget.style.transform = 'translateY(0)' }}>
+              <div style={{ color: CYAN, marginBottom: '14px' }}>{r.icon}</div>
+              <h3 style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '1.4rem', letterSpacing: '0.06em', color: '#e8f4fa', marginBottom: '8px' }}>{r.title}</h3>
+              <p style={{ fontFamily: 'Barlow, sans-serif', fontSize: '0.9rem', color: 'rgba(232,244,250,0.6)', lineHeight: 1.7, fontWeight: 300 }}>{r.desc}</p>
             </div>
           ))}
         </div>
