@@ -26,19 +26,9 @@ export default function WhyUs() {
       desc: 'Most installations completed in 1–3 days. We respect your home and your time, leaving no mess behind.',
     },
     {
-      icon: <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>,
-      title: '10-Year Guarantee',
-      desc: 'We stand behind our craftsmanship with an industry-leading 10-year structural guarantee on all installations.',
-    },
-    {
       icon: <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>,
       title: 'Local Glasgow Team',
       desc: 'A tight-knit team of experienced tradespeople, all based in Glasgow. No subcontractors, no strangers — just trusted professionals.',
-    },
-    {
-      icon: <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>,
-      title: 'All-Inclusive Service',
-      desc: 'Electrics, carpentry, plastering, tiling and painting — we handle every trade under one roof so the result is seamless.',
     },
     {
       icon: <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>,
