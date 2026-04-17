@@ -42,10 +42,18 @@ export default function Hero() {
       <div style={{ position: 'relative', zIndex: 2, maxWidth: '1280px', margin: '0 auto', padding: '0 24px', width: '100%' }}>
         <div style={{ maxWidth: '720px' }} ref={headingRef}>
 
-          {/* Eyebrow */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '24px' }}>
+          {/* Eyebrow - Pushed down with marginTop */}
+          <div style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '14px', 
+            marginBottom: '24px',
+            marginTop: '60px' // 👈 Added this to move it down
+          }}>
             <div style={{ width: '40px', height: '1px', background: CYAN }} />
-            <span style={{ fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 600, fontSize: '0.8rem', letterSpacing: '0.25em', textTransform: 'uppercase', color: CYAN }}>Glasgow's Premier Media Wall Specialists</span>
+            <span style={{ fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 600, fontSize: '0.8rem', letterSpacing: '0.25em', textTransform: 'uppercase', color: CYAN }}>
+              Glasgow's Premier Media Wall Specialists
+            </span>
           </div>
 
           {/* Heading */}
@@ -89,20 +97,6 @@ export default function Hero() {
               onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(232,244,250,0.3)'; e.currentTarget.style.color = '#e8f4fa' }}>
               View Our Work
             </button>
-          </div>
-
-          {/* Trust bar */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '28px', marginTop: '52px', paddingTop: '32px', borderTop: `1px solid rgba(0,200,240,0.2)` }}>
-            {[
-              { num: '10+',  label: 'Installations' },
-              { num: '5★',   label: 'Rated Service' },
-              { num: 'Free', label: 'Site Survey' },
-            ].map(item => (
-              <div key={item.label} style={{ textAlign: 'center' }}>
-                <div style={{ fontFamily: 'Bebas Neue, sans-serif', fontSize: '1.8rem', letterSpacing: '0.05em', background: `linear-gradient(135deg, ${CYAN2}, ${CYAN})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', lineHeight: 1 }}>{item.num}</div>
-                <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '0.7rem', letterSpacing: '0.18em', color: 'rgba(232,244,250,0.5)', textTransform: 'uppercase', marginTop: '2px' }}>{item.label}</div>
-              </div>
-            ))}
           </div>
         </div>
       </div>

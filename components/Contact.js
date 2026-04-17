@@ -89,8 +89,8 @@ export default function Contact() {
             </p>
 
             {[
-              { icon: '📞', label: 'Phone',    value: '0141 000 0000',              link: 'tel:+441410000000' },
-              { icon: '✉️', label: 'Email',    value: 'hello@clydemediawalls.co.uk', link: 'mailto:hello@clydemediawalls.co.uk' },
+              { icon: '📞', label: 'Phone',    value: '+44 7902 193092',              link: 'tel:+441410000000' },
+              { icon: '✉️', label: 'Email',    value: 'chris@clydemediawalls.co.uk', link: 'mailto:hello@clydemediawalls.co.uk' },
               { icon: '📍', label: 'Based in', value: 'Glasgow, Scotland',           link: null },
               { icon: '🕐', label: 'Hours',    value: 'Mon–Sat: 8am – 6pm',         link: null },
             ].map(item => (

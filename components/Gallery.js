@@ -6,40 +6,22 @@ const CYAN2 = '#5de0f5'
 
 const projects = [
   {
-    img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80&auto=format&fit=crop',
+    img: '/work1.jpeg',
     title: 'Contemporary Floating Wall',
     location: 'Bearsden, Glasgow',
     tags: ['TV Mount', 'LED Lighting', 'Custom Shelving'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80&auto=format&fit=crop',
+    img: '/work2.jpeg',
     title: 'Fireplace Feature Wall',
     location: 'Newton Mearns, Glasgow',
     tags: ['Bio-Ethanol Fire', 'Stone Cladding', 'AV Integration'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=800&q=80&auto=format&fit=crop',
+    img: '/work3.jpeg',
     title: 'Minimalist Media Suite',
     location: 'Thornliebank, Glasgow',
     tags: ['4K Mount', 'Mood Lighting', 'Cable Concealment'],
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80&auto=format&fit=crop',
-    title: 'Luxury Living Room Wall',
-    location: 'Paisley, Renfrewshire',
-    tags: ['Electric Fire', 'Marble Effect', 'Built-in Storage'],
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80&auto=format&fit=crop',
-    title: 'Oak & Slate Feature Wall',
-    location: 'Milngavie, East Dunbartonshire',
-    tags: ['Natural Oak', 'Slate Panels', 'Integrated Speakers'],
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1618220179428-22790b461013?w=800&q=80&auto=format&fit=crop',
-    title: 'Industrial Loft Design',
-    location: 'Finnieston, Glasgow',
-    tags: ['Steel Accents', 'OLED Mount', 'Feature Lighting'],
   },
 ]
 

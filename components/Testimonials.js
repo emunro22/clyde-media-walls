@@ -19,21 +19,6 @@ const reviews = [
     text: 'We had a very specific vision for our lounge and they delivered exactly what we wanted and more. The stone cladding detail is stunning. Top-quality finish, competitive pricing, and a team that genuinely cares about the result.',
     project: 'Stone Cladding Feature Wall',
   },
-  {
-    name: 'Michael Brennan', location: 'Milngavie', rating: 5,
-    text: 'Second time using Clyde Media Walls — did one for us last year and we loved it so much we had them come back for the master bedroom. Consistent quality, reliable tradesmen, and a product that looks absolutely stunning.',
-    project: 'Bedroom Media Wall',
-  },
-  {
-    name: 'Emma & Tom Reid', location: 'Thornliebank, Glasgow', rating: 5,
-    text: 'The attention to detail is second to none. Every cable is hidden, every joint is perfect, and the custom shelving fits our equipment exactly. Worth every penny — transformative doesn\'t do it justice.',
-    project: 'Full AV Integration Wall',
-  },
-  {
-    name: 'Stuart MacLeod', location: 'Finnieston, Glasgow', rating: 5,
-    text: 'Went for a more industrial look which they nailed completely. They were flexible with our schedule and the job was completed ahead of time. The team are genuinely passionate about their craft — it really shows.',
-    project: 'Industrial Style Feature Wall',
-  },
 ]
 
 export default function Testimonials() {

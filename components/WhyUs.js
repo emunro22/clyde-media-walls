@@ -48,8 +48,6 @@ export default function WhyUs() {
   ]
 
   const stats = [
-    { num: '100+',   label: 'Projects Completed' },
-    { num: '5.0',    label: 'Average Star Rating' },
     { num: '3 days', label: 'Avg Install Time' },
     { num: '100%',   label: 'Reliable' },
   ]
